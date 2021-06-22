@@ -1,0 +1,56 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  display: flex;
+}
+
+.index-bar {
+  flex: 1 1 65rem;
+}
+
+.topics {
+  @apply pt-3 pb-3 pl-4 border-b-2;
+}
+
+.info-section {
+  flex: 1 1 auto;
+  @apply p-8 overflow-y-auto;
+}
+
+.info-section > div {
+  @apply mt-7;
+}
+
+.main-heading {
+  @apply text-4xl mb-6;
+}
+
+p {
+  @apply text-xl mt-4;
+}
+
+.content > ul {
+  @apply mt-4 ml-10 list-disc;
+}
+
+.content > li {
+  list-style: disc;
+  @apply m-7 mt-8;
+}
